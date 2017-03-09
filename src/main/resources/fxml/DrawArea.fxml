@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+
+<!--Created by Manuel Perez on 09/03/2017-->
+
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.canvas.Canvas?>
+<GridPane fx:id="drawArea" fx:controller="com.darkestapp.raycasting.controller.DrawAreaController" xmlns:fx="http://javafx.com/fxml" styleClass="root">
+
+    <padding>
+        <Insets top="10" right="100" bottom="10" left="10"/>
+    </padding>
+    <ScrollPane fx:id="drawPane" prefHeight="640.0" prefWidth="640.0">
+        <content>
+            <!--<Canvas fx:id="canvas" height="200.0" width="200.0" onMouseDragged="#handleMousePressed" />-->
+        </content>
+    </ScrollPane>
+
+</GridPane>

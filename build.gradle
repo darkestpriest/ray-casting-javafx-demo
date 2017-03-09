@@ -1,0 +1,24 @@
+group 'com.darkestapp'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = "org.darkestapp.raycasting.Main"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+defaultTasks = ['clean', 'jar']
+
+dependencies {
+    sourceSets.main.resources.srcDirs = ["src/main/resources/"]
+    testCompile 'junit:junit:4.12'
+}
+
+processResources {
+    expand projectVersion: project.version
+}
